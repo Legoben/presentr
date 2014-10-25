@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Presentr</title>
+
+    <link href="static/css/superhero.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 id="title"><span id="logo">Presentr</span> - Perfect Your Public Speaking Skills!</h1>
+
+    </div>
+    <div class="btn-toolbar left">
+        <div class="btn-group" id="badlist">
+            <a class="btn btn-default"><b>Like's:</b> <span class="count" >0</span></a>
+            <a class="btn btn-default"><b>You Know's:</b> <span class="count">0</span></a>
+            <a class="btn btn-default"><b>Basically's:</b> <span class="count">0</span></a>
+            <a class="btn btn-default" onclick="addword()">+</a>
+        </div>
+    </div>
+
+    <div class="btn-toolbar right">
+        <div class="btn-group">
+            <a class="btn btn-danger" onclick="startrec()" id="recbutton">Start Recording</a>
+            <div class="btn-group">
+                <a id="playback" class="btn btn-success disabled" onclick="playback()" >Play Recording</a>
+                <a class="btn btn-success disabled" id="audiodl"><i class="fa fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="output">
+        <h2>Press Record!</h2>
+    </div>
+    
+    <div id="footer">
+        <div class="btn-group" id="stats">
+            <a class="btn btn-default"><b>Most used word: </b> <span id="mostused" ></span></a>
+            <a class="btn btn-default"><b>Time Elapsed: </b> <span id="timesince"></span></a>
+            <a class="btn btn-default"><b>Number of Rehearsals: </b> <span id="rnum"></span></a>
+        </div>
+    </div>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/recorder.js"></script>
+</body>
+
+</html>

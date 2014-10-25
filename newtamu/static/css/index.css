@@ -1,0 +1,55 @@
+@import url(//fonts.googleapis.com/css?family=Titillium+Web:400,700);
+
+.hidden{
+    display: none;
+}
+
+#title{
+    text-align: center;
+}
+
+.right{
+    float: right;
+    padding-right: 30px;
+}
+
+.left{
+    display: inline-block;
+    padding-left: 30px;
+}
+
+#output{
+    background-color: #4e5d6c;
+    width: 70%;
+    min-height: 70px;
+    margin: 50px auto;
+    padding: 7px;
+    max-height: 300px;
+    height: auto;
+    overflow-x: auto;
+}
+
+#output h2{
+    text-align: center;
+    margin: 0;
+}
+
+#badlist{
+    text-transform: capitalize;
+}
+
+.hl{
+    border-bottom: 1px solid red;   
+}
+
+#logo{
+     font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
