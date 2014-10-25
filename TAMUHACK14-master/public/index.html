@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.IO Chat Example</title>
+    <link rel="stylesheet" href="http://bootswatch.com/sandstone/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <style>
+        .inputforform{
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        #event_details{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Welcome to HackTalk</h1>
+        <p>Cool tagline here</p>
+        
+    </div>
+    <div id="event_details_pane" style="display:hidden">
+        <form id="event_details" method="post" action="./">
+                Event Name
+                <input type="text" class="form-control inputforform" placeholder="Name ..." name="eventName"><br>
+                Starting Date
+                <input type="datepicker" class="form-control inputforform" placeholder="Starting Date ..." name="eventStart"><br>
+                Ending Date
+                <input type="datepicker" class="form-control inputforform" placeholder="Ending Date ..." name="eventEnd"><br>
+                Email
+                <input type="email" class="form-control inputforform" placeholder="Email ..." name="eventEmail"><br>
+            <label><input type="checkbox" name="locationLimited" value="0" />Restrict access to this location.</label><br>
+            
+            <a href="#" class="btn btn-default">Submit!</a>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
